@@ -1,0 +1,46 @@
+{
+  "name": "dsh-image-reader",
+  "version": "0.1.0",
+  "description": "DSH plugin that lets text-only models understand images through a separate vision model.",
+  "type": "module",
+  "main": "image-reader.mjs",
+  "exports": {
+    ".": "./image-reader.mjs"
+  },
+  "files": [
+    "image-reader.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test image-reader.test.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "deepseek",
+    "image",
+    "vision",
+    "multimodal",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wang90/dsh-image-reader.git"
+  },
+  "homepage": "https://github.com/wang90/dsh-image-reader#readme",
+  "bugs": {
+    "url": "https://github.com/wang90/dsh-image-reader/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

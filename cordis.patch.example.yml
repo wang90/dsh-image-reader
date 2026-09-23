@@ -1,0 +1,14 @@
+# Copy the insert row below into
+#   $DSH_HOME/profiles/web/cordis.patch.yml
+# and replace the path with the absolute path to this repository's
+# dsh-image-reader/image-reader.mjs.
+- insert:
+    - id: image-reader
+      name: '/absolute/path/to/dsh-image-reader/image-reader.mjs'
+      config:
+        provider: deepseek-official
+        model: deepseek-v4-flash-vision-exp
+        auto: true
+        tool: true
+        advertiseImage: true
+        describeToolImages: true

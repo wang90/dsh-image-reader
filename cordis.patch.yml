@@ -1,0 +1,15 @@
+# DSH bundle layer for dsh-image-reader.
+#
+# Installed bundles are referenced by package name, so Node resolution can find
+# the package's main module. Users can override any config key in their own
+# profile cordis.patch.yml.
+- insert:
+    - id: image-reader
+      name: 'dsh-image-reader'
+      config:
+        provider: deepseek-official
+        model: deepseek-v4-flash-vision-exp
+        auto: true
+        tool: true
+        advertiseImage: true
+        describeToolImages: true
